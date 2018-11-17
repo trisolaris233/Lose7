@@ -3,12 +3,15 @@
     <?php if (!empty($this->options->sidebarBlock) && in_array('ShowRecentPosts', $this->options->sidebarBlock)): ?>
     <section class="widget">
         <div class="title">
-            <h3 class="widget-title"><?php _e('最新文章'); ?></h3>
+            <h3 class="widget-title"><?php _e('最近更新'); ?></h3>
         </div>
 		
         <ul class="widget-list">
-            <?php $this->widget('Widget_Contents_Post_Recent')
-            ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
+            <?php /*$this->widget('Widget_Contents_Modified_Recent')
+            ->parse('<li><a href="{permalink}">{title}</a></li>');*/ ?>
+            <?php 
+                getRecentUpdate(10);
+            ?>
         </ul>
     </section>
     <?php endif; ?>

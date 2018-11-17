@@ -661,9 +661,10 @@ blockquote.weak a:hover {
 .readmore {
   text-align: center;
 }
+
 .modified-alert {
   padding: 5px;
-  margin: 10px 0;
+  margin: 10px 0 !important;
   color: #A80030;
   font-size: 14px;
   text-indent: 22px;
@@ -836,4 +837,26 @@ div.filebox {
 }
 .hljs-strong {
   font-weight: bold;
+}
+.post-single p a {
+  font-weight: bold;
+}
+.post-single li a {
+  font-weight: bold;
+}
+span.mask {
+  color: #a3002e;
+  background-color: #a3002e;
+}
+.post-single p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.modified-alert p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.post-single img {
+  margin-top: 10px;
+  margin-bottom: 10px; 
 }
